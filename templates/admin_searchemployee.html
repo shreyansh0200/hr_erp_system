@@ -1,0 +1,32 @@
+
+
+
+{% include 'admin_header.html' %}
+    <!-- HEADER , MENU END -->
+
+    <div class="content-wrapper">
+        <main class="main-content">
+            <h2>Search Employee</h2>
+            <hr>
+            <form action="/admin_emp_search_result" method="post">
+                Search By Name:
+                <input type="text" name="txtname" class="form-control">
+                <br>
+                <input type="submit"  class="btn btn-success">
+            </form>
+
+        </main>
+
+        <aside class="sidebar">
+            
+
+           
+
+            <section class="widget">
+                <h3>DASHBOARD</h3>
+                
+            </section>
+        </aside>
+    </div>
+
+{% include 'footer.html' %}

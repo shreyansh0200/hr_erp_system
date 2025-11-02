@@ -1,0 +1,68 @@
+
+
+
+{% include 'admin_header.html' %}
+
+    <div class="content-wrapper">
+        <main class="main-content">
+            <h2>Welcome, {{ session.get('Name', 'Administrator') }}</h2>
+            
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Total Employees</h3>
+                    <p>{{ total_employees if total_employees else '-' }}</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Departments</h3>
+                    <p>-</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Active Projects</h3>
+                    <p>-</p>
+                </div>
+                <div class="stat-card">
+                    <h3>This Month's Hires</h3>
+                    <p>-</p>
+                </div>
+            </div>
+
+            <article class="post">
+                <h2>Recent Updates</h2>
+                <div class="article-body">
+                    <ul>
+                        <li>New employee onboarding process implemented</li>
+                        <li>Updated salary structures for Q4 2025</li>
+                        <li>Employee training program scheduled for next month</li>
+                        <li>Performance review cycle starting soon</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="post">
+                <h2>Quick Actions</h2>
+                <div class="article-body">
+                    <div class="btn-group" style="margin: 20px 0;">
+                        <a href="/admin_addemployee" class="btn btn-success" style="margin-right: 10px;">Add New Employee</a>
+                        <a href="/admin_showemployee" class="btn btn-success" style="margin-right: 10px;">View All Employees</a>
+                        <a href="/admin_searchemployee" class="btn btn-success">Search Employee</a>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <section class="widget">
+               
+            </section>
+
+            <section class="widget">
+                
+            </section>
+
+            <section class="widget">
+                
+            </section>
+        </aside>
+    </div>
+
+{% include 'footer.html' %}

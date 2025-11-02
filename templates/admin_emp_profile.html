@@ -1,0 +1,46 @@
+
+
+
+{% include 'admin_header.html' %}
+    <!-- HEADER , MENU END -->
+
+    <div class="content-wrapper">
+        <main class="main-content">
+            <hr>
+<!--form-->
+            <form action="/admin_emp_update" method="post">    
+                empid:- <input type="number" value="{{empdetails[0]}}" name="txtempid" class="form-control">
+                <br>
+                name:- <input type="text"value="{{empdetails[1]}}"   name="txtname" class="form-control">
+                <br>
+                email:- <input type="text"  value="{{empdetails[2]}}" name="txtemail" class="form-control">
+                <br>
+                mobile:- <input type="text" value="{{empdetails[3]}}" name="txtmobile" class="form-control">
+                <br>
+                designation:- <input type="text" value="{{empdetails[4]}}" name="txtdesignation" class="form-control">
+                <br>
+                salary:- <input type="number" value="{{empdetails[5]}}" name="txtsalary" class="form-control">
+                <br>
+                <input type="submit" value="update" class="btn btn-success">
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <a href="/admin_employ_delete?eid={{empdetails[0]}}" class="btn btn-danger">delete</a>
+            </form>
+
+        </main>
+
+        <aside class="sidebar">
+            
+
+           
+
+            <section class="widget">
+                <h3>DASHBOARD</h3>
+                
+            </section>
+        </aside>
+    </div>
+
+{% include 'footer.html' %}

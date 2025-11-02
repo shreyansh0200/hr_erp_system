@@ -1,0 +1,41 @@
+
+
+
+{% include 'admin_header.html' %}
+    <!-- HEADER , MENU END -->
+
+    <div class="content-wrapper">
+        <main class="main-content">
+            <hr>
+<!--form-->
+            <form action="/save" method="post">    
+                empid:- <input type="number" name="txtempid" class="form-control">
+                <br>
+                name:- <input type="text" name="txtname" class="form-control">
+                <br>
+                email:- <input type="text" name="txtemail" class="form-control">
+                <br>
+                mobile:- <input type="text" name="txtmobile" class="form-control">
+                <br>
+                designation:- <input type="text" name="txtdesignation" class="form-control">
+                <br>
+                salary:- <input type="number" name="txtsalary" class="form-control">
+                <br>
+                <input type="submit"  class="btn btn-success">
+            </form>
+
+        </main>
+
+        <aside class="sidebar">
+            
+
+           
+
+            <section class="widget">
+                <h3>DASHBOARD</h3>
+                
+            </section>
+        </aside>
+    </div>
+
+{% include 'footer.html' %}

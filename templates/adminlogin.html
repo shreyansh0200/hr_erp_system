@@ -1,0 +1,47 @@
+
+
+
+{% include 'header.html' %}
+    <!-- HEADER , MENU END -->
+
+    <div class="content-wrapper">
+        <main class="main-content">
+            <h2>ADMIN LOGIN</h2>
+            <hr>
+            <br>
+            <!-- form   -->
+            <form action="/admin_home" method="post">
+                Username:- <input type="text" name="txtUsername">
+                <br><br>
+                Password:- <input type="password" name="txtPassword">
+                <hr>
+                <input type="submit" class="btn btn-success">
+            </form>
+
+            <h1>{{msg}}</h1>
+
+          
+            
+
+
+            
+
+
+        </main>
+
+        <aside class="sidebar">
+            <section class="widget">
+              
+            </section>
+
+            <section class="widget">
+               
+            </section>
+
+            <section class="widget">
+                
+            </section>
+        </aside>
+    </div>
+
+{% include 'footer.html' %}
