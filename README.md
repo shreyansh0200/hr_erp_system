@@ -121,7 +121,7 @@ app.config['MYSQL_DB'] = 'hr_erp_db'
 
 Start the Flask development server with:
 ```bash
-python 859d3ae6-6851-41f2-88e8-b069aa5abf83.py
+python main.py
 ```
 
 Now, open your browser and visit:
@@ -160,11 +160,10 @@ hr_erp_system/
 │   └── ...
 │
 ├── static/
-│   ├── css/
-│   ├── js/
-│   └── images/
+│   ├── css/style.css
+│   
 │
-├── 859d3ae6-6851-41f2-88e8-b069aa5abf83.py   # Main Flask app
+├── python.py   # Main Flask app
 ├── requirements.txt
 └── README.md
 ```
@@ -218,4 +217,5 @@ hr_erp_system/
 📧 [shreyansh kandu](mailto:shreyanshkandu@gmail.com)
 
 ---
+
 
